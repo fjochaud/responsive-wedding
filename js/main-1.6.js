@@ -53,6 +53,7 @@ $(function() {
 			$("menu_az").text($.i18n.prop('menu_az'));
 			$("menu_reg").text($.i18n.prop('menu_reg'));
 			$("text_ceremony").text($.i18n.prop('text_ceremony'));
+			$("header_ceremony").text($.i18n.prop('header_ceremony'));
     }
   });
 

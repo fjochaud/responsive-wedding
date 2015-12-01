@@ -387,7 +387,7 @@ section h2 {
     .subheader-container.sticky {
         position: fixed;
         top: 40px;
-
+        width: 923px;
         animation:thedrop 1s 1;
         -moz-animation:thedrop 1s 1;
         -webkit-animation:thedrop 1s 1;

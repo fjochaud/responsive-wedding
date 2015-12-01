@@ -44,7 +44,7 @@ $(function() {
     name: 'Messages',
 		path:'bundle/',
 		mode:'map',
-		language: 'fr_FR',
+		language: lang,
     callback: function() {
       $("#menu_bd").text($.i18n.prop('menu_bd'));
     }

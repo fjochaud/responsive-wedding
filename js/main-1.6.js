@@ -39,12 +39,14 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/MIT-license.txt
 
 $(function() {
 
+	/** @const */ DEFAULT_VALUE = 'en';
+	/** @const */ PREFERRED_LANGUAGE = navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage || DEFAULT_VALUE;
 
   $.i18n.properties({
     name: 'Messages',
 		path:'bundle/',
 		mode:'map',
-		language: lang,
+		language: PREFERRED_LANGUAGE,
     callback: function() {
       $("#menu_bd").text($.i18n.prop('menu_bd'));
     }

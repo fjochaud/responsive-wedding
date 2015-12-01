@@ -49,6 +49,10 @@ $(function() {
 		language: PREFERRED_LANGUAGE,
     callback: function() {
       $("#menu_bd").text($.i18n.prop('menu_bd'));
+			$("menu_bzh").text($.i18n.prop('menu_bzh'));
+			$("menu_az").text($.i18n.prop('menu_az'));
+			$("menu_reg").text($.i18n.prop('menu_reg'));
+			$("text_ceremony").text($.i18n.prop('text_ceremony'));
     }
   });
 

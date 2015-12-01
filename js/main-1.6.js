@@ -52,8 +52,9 @@ $(function() {
 			$("#menu_bzh").text($.i18n.prop('menu_bzh'));
 			$("#menu_az").text($.i18n.prop('menu_az'));
 			$("#menu_reg").text($.i18n.prop('menu_reg'));
-			$("#text_ceremony").text($.i18n.prop('text_ceremony'));
+			$("#text_ceremony").html($.i18n.prop('text_ceremony'));//.replace(/\r?\n/g, '<br/>'));
 			$("#header_ceremony").text($.i18n.prop('header_ceremony'));
+		//	alert($.i18n.prop('text_ceremony'));
     }
   });
 

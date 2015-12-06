@@ -41,7 +41,7 @@ function changeLang(lang) {
     name: 'Messages',
 		path:'bundle/',
 		mode:'map',
-		language: PREFERRED_LANGUAGE,
+		language: lang,
     callback: function() {
       $("#menu_bd").text($.i18n.prop('menu_bd'));
 			$("#menu_bzh").text($.i18n.prop('menu_bzh'));

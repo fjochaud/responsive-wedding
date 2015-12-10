@@ -119,6 +119,14 @@ body {
     Theme
    =================== */
 
+.lang-container {
+  position: fixed;
+  top: 23px;
+  left: 15px;
+  z-index: 100;
+}
+
+
 .header-container {
     position:absolute;
     bottom:20px;
@@ -136,7 +144,55 @@ body {
 }
 
 
-.subheader-container {
+.bzh-header-container {
+/*    bottom:20px;*/
+    width: 100%;
+    background: black;
+    z-index: 10;
+    /* Fallback for web browsers that doesn't support RGBa */
+    background: rgb(0, 0, 0);
+    /* RGBa with 0.9 opacity */
+    background: rgba(0, 0, 0, 0.8);
+    /* For IE 5.5 - 7*/
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)";
+}
+
+.bzh-footer-container{
+  visibility: hidden;
+  width: 100%;
+  background: black;
+  z-index: 10;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgb(0, 0, 0);
+  /* RGBa with 0.9 opacity */
+  background: rgba(0, 0, 0, 0.8);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)";
+
+}
+
+.az-footer-container{
+  visibility: hidden;
+  width: 100%;
+  background: black;
+  z-index: 10;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgb(0, 0, 0);
+  /* RGBa with 0.9 opacity */
+  background: rgba(0, 0, 0, 0.8);
+  /* For IE 5.5 - 7*/
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000);
+  /* For IE 8*/
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#CC000000, endColorstr=#CC000000)";
+
+}
+
+
+.az-header-container {
 /*    bottom:20px;*/
     width: 100%;
     background: black;
@@ -378,16 +434,31 @@ section h2 {
         -moz-animation:thedrop 1s 1;
         -webkit-animation:thedrop 1s 1;
     }
-    .subheader-container {
+    .bzh-header-container {
         bottom:20px;
         width:100%;
         line-height:12px;
     }
 
-    .subheader-container.sticky {
+    .bzh-header-container.sticky {
         position: fixed;
         top: 40px;
-        width: 923px;
+        width: 946px;
+        animation:thedrop 1s 1;
+        -moz-animation:thedrop 1s 1;
+        -webkit-animation:thedrop 1s 1;
+    }
+
+    .az-header-container {
+        bottom:20px;
+        width:100%;
+        line-height:12px;
+    }
+
+    .az-header-container.sticky {
+        position: fixed;
+        top: 40px;
+        width: 946px;
         animation:thedrop 1s 1;
         -moz-animation:thedrop 1s 1;
         -webkit-animation:thedrop 1s 1;

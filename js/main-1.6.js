@@ -63,9 +63,12 @@ function setLang(lang){
 			$("#menu_bzh").text($.i18n.prop('menu_bzh'));
 			$("#menu_az").text($.i18n.prop('menu_az'));
 			$("#menu_reg").text($.i18n.prop('menu_reg'));
-			$("#text_ceremony").html($.i18n.prop('text_ceremony'));//.replace(/\r?\n/g, '<br/>'));
+			$("#text_ceremony").html($.i18n.prop('text_ceremony'));
 			$("#header_ceremony").text($.i18n.prop('header_ceremony'));
-		//	alert($.i18n.prop('text_ceremony'));
+		$("#intro_tally").html($.i18n.prop('intro_tally'));
+		$("#intro_florent").html($.i18n.prop('intro_florent'));
+		$("#meeting").html($.i18n.prop('intro_florent'));
+
 		}
 	});
 }

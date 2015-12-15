@@ -63,12 +63,18 @@ function setLang(lang){
 			$("#menu_bzh").text($.i18n.prop('menu_bzh'));
 			$("#menu_az").text($.i18n.prop('menu_az'));
 			$("#menu_reg").text($.i18n.prop('menu_reg'));
-			$("#text_ceremony").html($.i18n.prop('text_ceremony'));
-			$("#header_ceremony").text($.i18n.prop('header_ceremony'));
-		$("#intro_tally").html($.i18n.prop('intro_tally'));
-		$("#intro_florent").html($.i18n.prop('intro_florent'));
-		$("#meeting").html($.i18n.prop('meeting'));
-		$("#header_b_g").text($.i18n.prop('header_b_g'));
+			$("#intro_tally").html($.i18n.prop('intro_tally'));
+			$("#intro_florent").html($.i18n.prop('intro_florent'));
+			$("#meeting").html($.i18n.prop('meeting'));
+			$("#header_b_g").text($.i18n.prop('header_b_g'));
+			$("#header_engagement").text($.i18n.prop('header_engagement'));
+			$("#story_engagement").text($.i18n.prop('story_engagement'));
+			$("#header_now").text($.i18n.prop('header_now'));
+			$("#story_now").text($.i18n.prop('story_now'));
+			$("#header_ceremony_bzh").text($.i18n.prop('header_ceremony_bzh'));
+			$("#text_ceremony_bzh").html($.i18n.prop('text_ceremony_bzh'));
+			$("#header_schedule_bzh").text($.i18n.prop('header_schedule_bzh'));
+			$("#text_schedule_bzh").html($.i18n.prop('text_schedule_bzh'));
 
 
 		}

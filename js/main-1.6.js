@@ -68,7 +68,7 @@ function setLang(lang){
 		$("#intro_tally").html($.i18n.prop('intro_tally'));
 		$("#intro_florent").html($.i18n.prop('intro_florent'));
 		$("#meeting").html($.i18n.prop('meeting'));
-		$("#header_b_g").text($.i18n.prop('menu_bd'));
+		$("#header_b_g").text($.i18n.prop('header_b_g'));
 
 
 		}

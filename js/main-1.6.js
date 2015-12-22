@@ -72,9 +72,9 @@ function setLang(lang){
 			$("#header_now").text($.i18n.prop('header_now'));
 			$("#story_now").text($.i18n.prop('story_now'));
 			$("#header_bzh").text($.i18n.prop('header_bzh'));
-			$("#header_ceremony_bzh").text($.i18n.prop('header_ceremony_bzh'));
+			$("#header_ceremony_bzh").text($.i18n.prop('header_ceremony'));
 			$("#text_ceremony_bzh").html($.i18n.prop('text_ceremony_bzh'));
-			$("#header_schedule_bzh").text($.i18n.prop('header_schedule_bzh'));
+			$("#header_schedule_bzh").text($.i18n.prop('header_schedule'));
 			$("#text_schedule_bzh").html($.i18n.prop('text_schedule_bzh'));
 			$("#menu_schedule_bzh").text($.i18n.prop('sub_schedule'));
 			$("#menu_accomodations_bzh").text($.i18n.prop('sub_accomodations'));
@@ -89,7 +89,7 @@ function setLang(lang){
 			$("#text_hotel_bzh").html($.i18n.prop('text_hotel_bzh'));
 			$("#header_dir_bzh").html($.i18n.prop('header_dir'));
 			$("#text_dir_bzh").html($.i18n.prop('text_dir_bzh'));
-			$("#header_map_bzh").html($.i18n.prop('header_map_bzh'));
+			$("#header_map_bzh").html($.i18n.prop('header_map'));
 			$("#header_sene").html($.i18n.prop('header_sene'));
 			$("#text_sene").html($.i18n.prop('text_sene'));
 			$("#header_beauregard").html($.i18n.prop('header_beauregard'));

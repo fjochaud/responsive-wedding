@@ -71,6 +71,7 @@ function setLang(lang){
 			$("#story_engagement").text($.i18n.prop('story_engagement'));
 			$("#header_now").text($.i18n.prop('header_now'));
 			$("#story_now").text($.i18n.prop('story_now'));
+			$("#header_bzh").text($.i18n.prop('header_bzh'));
 			$("#header_ceremony_bzh").text($.i18n.prop('header_ceremony_bzh'));
 			$("#text_ceremony_bzh").html($.i18n.prop('text_ceremony_bzh'));
 			$("#header_schedule_bzh").text($.i18n.prop('header_schedule_bzh'));
@@ -93,10 +94,26 @@ function setLang(lang){
 			$("#text_sene").html($.i18n.prop('text_sene'));
 			$("#header_beauregard").html($.i18n.prop('header_beauregard'));
 			$("#text_beauregard").html($.i18n.prop('text_beauregard'));
+			$("#header_az").html($.i18n.prop('header_az'));
+			$("#header_ceremony_az").html($.i18n.prop('header_ceremony'));
+			$("#text_ceremony_az").html($.i18n.prop('text_ceremony_az'));
+			$("#header_schedule_az").html($.i18n.prop('header_schedule'));
+			$("#text_schedule_az").html($.i18n.prop('text_schedule_az'));
+			$("#header_acc_az").html($.i18n.prop('header_acc'));
+			$("#header_hotel_az").html($.i18n.prop('header_hotel'));
+			$("#header_dir_az").html($.i18n.prop('header_dir'));
+			$("#header_map_az").html($.i18n.prop('header_map'));
+			$("#header_sedona").html($.i18n.prop('header_sedona'));
+			$("#text_sedona").html($.i18n.prop('text_sedona'));
+			$("#header_place_sedona").html($.i18n.prop('header_place_sedona'));
+			$("#text_place_sedona").html($.i18n.prop('text_place_sedona'));
+			$("#header_registry").html($.i18n.prop('header_registry'));
+			$("#text_registry").html($.i18n.prop('text_registry'));
 
 
 
-			
+
+
 
 
 

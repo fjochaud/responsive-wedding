@@ -75,14 +75,14 @@ function setLang(lang){
 			$("#text_ceremony_bzh").html($.i18n.prop('text_ceremony_bzh'));
 			$("#header_schedule_bzh").text($.i18n.prop('header_schedule_bzh'));
 			$("#text_schedule_bzh").html($.i18n.prop('text_schedule_bzh'));
-			$("#sub_scheduleBZH").text($.i18n.prop('sub_schedule'));
-			$("#sub_accomodationsBZH").text($.i18n.prop('sub_accomodations'));
-			$("#sub_locationsBZH").text($.i18n.prop('sub_locations'));
-			$("#sub_aboutBZH").text($.i18n.prop('sub_about'));
-			$("#sub_scheduleAZ").text($.i18n.prop('sub_schedule'));
-			$("#sub_accomodationsAZ").text($.i18n.prop('sub_accomodations'));
-			$("#sub_locationsAZ").text($.i18n.prop('sub_locations'));
-			$("#sub_aboutAZ").text($.i18n.prop('sub_about'));
+			$("#menu_schedule_bzh").text($.i18n.prop('sub_schedule'));
+			$("#menu_accomodations_bzh").text($.i18n.prop('sub_accomodations'));
+			$("#menu_places_bzh").text($.i18n.prop('sub_locations'));
+			$("#menu_about_bzh").text($.i18n.prop('sub_about'));
+			$("#menu_schedule_AZ").text($.i18n.prop('sub_schedule'));
+			$("#menu_accomodations_AZ").text($.i18n.prop('sub_accomodations'));
+			$("#menu_places_AZ").text($.i18n.prop('sub_locations'));
+			$("#menu_about_AZ").text($.i18n.prop('sub_about'));
 
 		}
 	});

@@ -46,69 +46,68 @@ https://github.com/imakewebthings/jquery-waypoints/blob/master/MIT-license.txt
 !function(e){if("function"==typeof define&&define.amd)define(e);else if("object"==typeof exports)module.exports=e();else{var n=window.Cookies,t=window.Cookies=e();t.noConflict=function(){return window.Cookies=n,t}}}(function(){function e(){for(var e=0,n={};e<arguments.length;e++){var t=arguments[e];for(var o in t)n[o]=t[o]}return n}function n(t){function o(n,r,i){var c;if(arguments.length>1){if(i=e({path:"/"},o.defaults,i),"number"==typeof i.expires){var s=new Date;s.setMilliseconds(s.getMilliseconds()+864e5*i.expires),i.expires=s}try{c=JSON.stringify(r),/^[\{\[]/.test(c)&&(r=c)}catch(a){}return r=t.write?t.write(r,n):encodeURIComponent(String(r)).replace(/%(23|24|26|2B|3A|3C|3E|3D|2F|3F|40|5B|5D|5E|60|7B|7D|7C)/g,decodeURIComponent),n=encodeURIComponent(String(n)),n=n.replace(/%(23|24|26|2B|5E|60|7C)/g,decodeURIComponent),n=n.replace(/[\(\)]/g,escape),document.cookie=[n,"=",r,i.expires&&"; expires="+i.expires.toUTCString(),i.path&&"; path="+i.path,i.domain&&"; domain="+i.domain,i.secure?"; secure":""].join("")}n||(c={});for(var p=document.cookie?document.cookie.split("; "):[],d=/(%[0-9A-Z]{2})+/g,u=0;u<p.length;u++){var f=p[u].split("="),l=f[0].replace(d,decodeURIComponent),m=f.slice(1).join("=");'"'===m.charAt(0)&&(m=m.slice(1,-1));try{if(m=t.read?t.read(m,l):t(m,l)||m.replace(d,decodeURIComponent),this.json)try{m=JSON.parse(m)}catch(a){}if(n===l){c=m;break}n||(c[l]=m)}catch(a){}}return c}return o.get=o.set=o,o.getJSON=function(){return o.apply({json:!0},[].slice.call(arguments))},o.defaults={},o.remove=function(n,t){o(n,"",e(t,{expires:-1}))},o.withConverter=n,o}return n(function(){})});
 
 
-
 function changeLang(lang) {
-	Cookies.set('lang', lang);
-	setLang(lang);
+  Cookies.set('lang', lang);
+  setLang(lang);
 }
 
-function setLang(lang){
-	jQuery.i18n.properties({
-		name: 'Messages',
-		path:'bundle/',
-		mode:'map',
-		language: lang,
-		callback: function() {
-			$("#menu_bd").text($.i18n.prop('menu_bd'));
-			$("#menu_bzh").text($.i18n.prop('menu_bzh'));
-			$("#menu_az").text($.i18n.prop('menu_az'));
-			$("#menu_reg").text($.i18n.prop('menu_reg'));
-			$("#intro_tally").html($.i18n.prop('intro_tally'));
-			$("#intro_florent").html($.i18n.prop('intro_florent'));
-			$("#meeting").html($.i18n.prop('meeting'));
-			$("#header_b_g").text($.i18n.prop('header_b_g'));
-			$("#header_engagement").text($.i18n.prop('header_engagement'));
-			$("#story_engagement").text($.i18n.prop('story_engagement'));
-			$("#header_now").text($.i18n.prop('header_now'));
-			$("#story_now").text($.i18n.prop('story_now'));
-			$("#header_bzh").text($.i18n.prop('header_bzh'));
-			$("#header_ceremony_bzh").text($.i18n.prop('header_ceremony'));
-			$("#text_ceremony_bzh").html($.i18n.prop('text_ceremony_bzh'));
-			$("#header_schedule_bzh").text($.i18n.prop('header_schedule'));
-			$("#text_schedule_bzh").html($.i18n.prop('text_schedule_bzh'));
-			$("#menu_schedule_bzh").text($.i18n.prop('sub_schedule'));
-			$("#menu_accomodations_bzh").text($.i18n.prop('sub_accomodations'));
-			$("#menu_places_bzh").text($.i18n.prop('sub_locations'));
-			$("#menu_about_bzh").text($.i18n.prop('sub_about'));
-			$("#menu_schedule_AZ").text($.i18n.prop('sub_schedule'));
-			$("#menu_accomodations_AZ").text($.i18n.prop('sub_accomodations'));
-			$("#menu_places_AZ").text($.i18n.prop('sub_locations'));
-			$("#menu_about_AZ").text($.i18n.prop('sub_about'));
-			$("#header_acc_bzh").html($.i18n.prop('header_acc'));
-			$("#header_hotel_bzh").html($.i18n.prop('header_hotel'));
-			$("#text_hotel_bzh").html($.i18n.prop('text_hotel_bzh'));
-			$("#header_dir_bzh").html($.i18n.prop('header_dir'));
-			$("#text_dir_bzh").html($.i18n.prop('text_dir_bzh'));
-			$("#header_map_bzh").html($.i18n.prop('header_map'));
-			$("#header_sene").html($.i18n.prop('header_sene'));
-			$("#text_sene").html($.i18n.prop('text_sene'));
-			$("#header_beauregard").html($.i18n.prop('header_beauregard'));
-			$("#text_beauregard").html($.i18n.prop('text_beauregard'));
-			$("#header_az").html($.i18n.prop('header_az'));
-			$("#header_ceremony_az").html($.i18n.prop('header_ceremony'));
-			$("#text_ceremony_az").html($.i18n.prop('text_ceremony_az'));
-			$("#header_schedule_az").html($.i18n.prop('header_schedule'));
-			$("#text_schedule_az").html($.i18n.prop('text_schedule_az'));
-			$("#header_acc_az").html($.i18n.prop('header_acc'));
-			$("#header_hotel_az").html($.i18n.prop('header_hotel'));
-			$("#header_dir_az").html($.i18n.prop('header_dir'));
-			$("#header_map_az").html($.i18n.prop('header_map'));
-			$("#header_sedona").html($.i18n.prop('header_sedona'));
-			$("#text_sedona").html($.i18n.prop('text_sedona'));
-			$("#header_place_sedona").html($.i18n.prop('header_place_sedona'));
-			$("#text_place_sedona").html($.i18n.prop('text_place_sedona'));
-			$("#header_registry").html($.i18n.prop('header_registry'));
-			$("#text_registry").html($.i18n.prop('text_registry'));
+function setLang(lang) {
+  jQuery.i18n.properties({
+    name: 'Messages',
+    path: 'bundle/',
+    mode: 'map',
+    language: lang,
+    callback: function() {
+      $("#menu_bd").text($.i18n.prop('menu_bd'));
+      $("#menu_bzh").text($.i18n.prop('menu_bzh'));
+      $("#menu_az").text($.i18n.prop('menu_az'));
+      $("#menu_reg").text($.i18n.prop('menu_reg'));
+      $("#intro_tally").html($.i18n.prop('intro_tally'));
+      $("#intro_florent").html($.i18n.prop('intro_florent'));
+      $("#meeting").html($.i18n.prop('meeting'));
+      $("#header_b_g").text($.i18n.prop('header_b_g'));
+      $("#header_engagement").text($.i18n.prop('header_engagement'));
+      $("#story_engagement").text($.i18n.prop('story_engagement'));
+      $("#header_now").text($.i18n.prop('header_now'));
+      $("#story_now").text($.i18n.prop('story_now'));
+      $("#header_bzh").text($.i18n.prop('header_bzh'));
+      $("#header_ceremony_bzh").text($.i18n.prop('header_ceremony'));
+      $("#text_ceremony_bzh").html($.i18n.prop('text_ceremony_bzh'));
+      $("#header_schedule_bzh").text($.i18n.prop('header_schedule'));
+      $("#text_schedule_bzh").html($.i18n.prop('text_schedule_bzh'));
+      $("#menu_schedule_bzh").text($.i18n.prop('sub_schedule'));
+      $("#menu_accomodations_bzh").text($.i18n.prop('sub_accomodations'));
+      $("#menu_places_bzh").text($.i18n.prop('sub_locations'));
+      $("#menu_about_bzh").text($.i18n.prop('sub_about'));
+      $("#menu_schedule_AZ").text($.i18n.prop('sub_schedule'));
+      $("#menu_accomodations_AZ").text($.i18n.prop('sub_accomodations'));
+      $("#menu_places_AZ").text($.i18n.prop('sub_locations'));
+      $("#menu_about_AZ").text($.i18n.prop('sub_about'));
+      $("#header_acc_bzh").html($.i18n.prop('header_acc'));
+      $("#header_hotel_bzh").html($.i18n.prop('header_hotel'));
+      $("#text_hotel_bzh").html($.i18n.prop('text_hotel_bzh'));
+      $("#header_dir_bzh").html($.i18n.prop('header_dir'));
+      $("#text_dir_bzh").html($.i18n.prop('text_dir_bzh'));
+      $("#header_map_bzh").html($.i18n.prop('header_map'));
+      $("#header_sene").html($.i18n.prop('header_sene'));
+      $("#text_sene").html($.i18n.prop('text_sene'));
+      $("#header_beauregard").html($.i18n.prop('header_beauregard'));
+      $("#text_beauregard").html($.i18n.prop('text_beauregard'));
+      $("#header_az").html($.i18n.prop('header_az'));
+      $("#header_ceremony_az").html($.i18n.prop('header_ceremony'));
+      $("#text_ceremony_az").html($.i18n.prop('text_ceremony_az'));
+      $("#header_schedule_az").html($.i18n.prop('header_schedule'));
+      $("#text_schedule_az").html($.i18n.prop('text_schedule_az'));
+      $("#header_acc_az").html($.i18n.prop('header_acc'));
+      $("#header_hotel_az").html($.i18n.prop('header_hotel'));
+      $("#header_dir_az").html($.i18n.prop('header_dir'));
+      $("#header_map_az").html($.i18n.prop('header_map'));
+      $("#header_sedona").html($.i18n.prop('header_sedona'));
+      $("#text_sedona").html($.i18n.prop('text_sedona'));
+      $("#header_place_sedona").html($.i18n.prop('header_place_sedona'));
+      $("#text_place_sedona").html($.i18n.prop('text_place_sedona'));
+      $("#header_registry").html($.i18n.prop('header_registry'));
+      $("#text_registry").html($.i18n.prop('text_registry'));
 
 
 
@@ -117,178 +116,177 @@ function setLang(lang){
 
 
 
-		}
-	});
+    }
+  });
 }
 
 $(function() {
 
-      //Set language
+  //Set language
 
-			var cookie_lang = Cookies.get('lang');
-      /** @const */
-      DEFAULT_VALUE = 'en';
-      /** @const */
-      PREFERRED_LANGUAGE = cookie_lang || navigator.language || navigator.userLanguage
-			|| navigator.browserLanguage || navigator.systemLanguage || DEFAULT_VALUE;
+  var cookie_lang = Cookies.get('lang');
+  /** @const */
+  DEFAULT_VALUE = 'en';
+  /** @const */
+  PREFERRED_LANGUAGE = cookie_lang || navigator.language || navigator.userLanguage || navigator.browserLanguage || navigator.systemLanguage || DEFAULT_VALUE;
 
-      setLang(PREFERRED_LANGUAGE);
-
+  setLang(PREFERRED_LANGUAGE);
 
 
-      // Do our DOM lookups beforehand
-      var nav_container = $(".header-container");
-      var nav = $("#nav");
 
-      var top_spacing = 15;
-      var waypoint_offset = 50;
+  // Do our DOM lookups beforehand
+  var nav_container = $(".header-container");
+  var nav = $("#nav");
 
-      nav_container.waypoint({
-        handler: function(event, direction) {
+  var top_spacing = 15;
+  var waypoint_offset = 50;
 
-          if (direction == 'down') {
+  nav_container.waypoint({
+    handler: function(event, direction) {
 
-            nav_container.css({
-              'height': nav.outerHeight(),
-              'position': '',
-              'bottom': ''
-            });
-            nav_container.stop().addClass("sticky").css("top", -nav.outerHeight()).animate({
-              "top": top_spacing
-            });
+      if (direction == 'down') {
 
-          } else {
-            nav_container.css({
-              'top': '',
-              'height': ''
-            });
-            nav_container.stop().removeClass("sticky").css({
-              'position': 'absolute',
-              "bottom": nav.outerHeight() + waypoint_offset
-            }).animate({
-              "bottom": "20"
-            });
-          }
+        nav_container.css({
+          'height': nav.outerHeight(),
+          'position': '',
+          'bottom': ''
+        });
+        nav_container.stop().addClass("sticky").css("top", -nav.outerHeight()).animate({
+          "top": top_spacing
+        });
 
-        },
-        offset: function() {
-          return -nav.outerHeight() - waypoint_offset;
-        }
-      });
+      } else {
+        nav_container.css({
+          'top': '',
+          'height': ''
+        });
+        nav_container.stop().removeClass("sticky").css({
+          'position': 'absolute',
+          "bottom": nav.outerHeight() + waypoint_offset
+        }).animate({
+          "bottom": "20"
+        });
+      }
 
-      var nav_bzh_container = $(".bzh-header-container");
-      var bzh_nav = $("#bzh-nav");
-      var sub_top_spacing = nav.outerHeight() + 30;
-      var sub_waypoint_offset = -(nav.outerHeight() + 30);
+    },
+    offset: function() {
+      return -nav.outerHeight() - waypoint_offset;
+    }
+  });
 
-
-      nav_bzh_container.waypoint({
-        handler: function(event, direction) {
-          //			console.log(event);
-          if (direction == 'down') {
-
-            nav_bzh_container.css({
-              'height': bzh_nav.outerHeight(),
-              'position': '',
-              'bottom': ''
-            });
-            nav_bzh_container.stop().addClass("sticky").css("top", sub_top_spacing).animate({
-              "top": sub_top_spacing
-            });
-
-          } else {
-            nav_bzh_container.css({
-              'top': '',
-              'height': ''
-            });
-            nav_bzh_container.stop().removeClass("sticky").animate();
-          }
-
-        },
-        offset: function() {
-          return -sub_waypoint_offset;
-        }
-      });
-
-      var nav_az_container = $(".az-header-container");
-      var az_nav = $("#az-nav");
-      nav_az_container.waypoint({
-        handler: function(event, direction) {
-          //			console.log(event);
-          if (direction == 'down') {
-
-            nav_az_container.css({
-              'height': az_nav.outerHeight(),
-              'position': '',
-              'bottom': ''
-            });
-            nav_az_container.stop().addClass("sticky").css("top", sub_top_spacing).animate({
-              "top": sub_top_spacing
-            });
-
-          } else {
-            nav_az_container.css({
-              'top': '',
-              'height': ''
-            });
-            nav_az_container.stop().removeClass("sticky").animate();
-          }
-
-        },
-        offset: function() {
-          return -sub_waypoint_offset+32;
-        }
-      });
+  var nav_bzh_container = $(".bzh-header-container");
+  var bzh_nav = $("#bzh-nav");
+  var sub_top_spacing = nav.outerHeight() + 30;
+  var sub_waypoint_offset = -(nav.outerHeight() + 30);
 
 
-      var end_bzh = $(".bzh-footer-container")
-      end_bzh.waypoint({
-        handler: function(event, direction) {
-          if (direction == 'down') {
-						end_bzh.css({
-							'visibility': 'visible'
-						});
-            nav_bzh_container.css({
-              'visibility': 'hidden'
-            });
-          } else {
-            nav_bzh_container.css({
-              'visibility': ''
-            });
-						end_bzh.css({
-              'visibility': 'hidden'
-            });
-          }
-        },
-        offset: function() {
-          return -end_bzh.outerHeight() + 156;
-        }
-      });
-      var end_az = $(".az-footer-container")
-      end_az.waypoint({
-        handler: function(event, direction) {
-          if (direction == 'down') {
-            end_az.css({
-              'visibility': 'visible'
-            });
-            nav_az_container.css({
-              'visibility': 'hidden'
-            });
+  nav_bzh_container.waypoint({
+    handler: function(event, direction) {
+      //			console.log(event);
+      if (direction == 'down') {
 
-          } else {
+        nav_bzh_container.css({
+          'height': bzh_nav.outerHeight(),
+          'position': '',
+          'bottom': ''
+        });
+        nav_bzh_container.stop().addClass("sticky").css("top", sub_top_spacing).animate({
+          "top": sub_top_spacing
+        });
 
-            nav_az_container.css({
-              'visibility': ''
-            });
-            end_az.css({
-              'visibility': 'hidden'
-            });
-          }
-        },
-        offset: function() {
-          return -end_bzh.outerHeight() + 156;
-        }
-      });
+      } else {
+        nav_bzh_container.css({
+          'top': '',
+          'height': ''
+        });
+        nav_bzh_container.stop().removeClass("sticky").animate();
+      }
+
+    },
+    offset: function() {
+      return -sub_waypoint_offset;
+    }
+  });
+
+  var nav_az_container = $(".az-header-container");
+  var az_nav = $("#az-nav");
+  nav_az_container.waypoint({
+    handler: function(event, direction) {
+      //			console.log(event);
+      if (direction == 'down') {
+
+        nav_az_container.css({
+          'height': az_nav.outerHeight(),
+          'position': '',
+          'bottom': ''
+        });
+        nav_az_container.stop().addClass("sticky").css("top", sub_top_spacing).animate({
+          "top": sub_top_spacing
+        });
+
+      } else {
+        nav_az_container.css({
+          'top': '',
+          'height': ''
+        });
+        nav_az_container.stop().removeClass("sticky").animate();
+      }
+
+    },
+    offset: function() {
+      return -sub_waypoint_offset + 32;
+    }
+  });
+
+
+  var end_bzh = $(".bzh-footer-container")
+  end_bzh.waypoint({
+    handler: function(event, direction) {
+      if (direction == 'down') {
+        end_bzh.css({
+          'visibility': 'visible'
+        });
+        nav_bzh_container.css({
+          'visibility': 'hidden'
+        });
+      } else {
+        nav_bzh_container.css({
+          'visibility': ''
+        });
+        end_bzh.css({
+          'visibility': 'hidden'
+        });
+      }
+    },
+    offset: function() {
+      return -end_bzh.outerHeight() + 156;
+    }
+  });
+  var end_az = $(".az-footer-container")
+  end_az.waypoint({
+    handler: function(event, direction) {
+      if (direction == 'down') {
+        end_az.css({
+          'visibility': 'visible'
+        });
+        nav_az_container.css({
+          'visibility': 'hidden'
+        });
+
+      } else {
+
+        nav_az_container.css({
+          'visibility': ''
+        });
+        end_az.css({
+          'visibility': 'hidden'
+        });
+      }
+    },
+    offset: function() {
+      return -end_bzh.outerHeight() + 156;
+    }
+  });
 
   var all_nav_links = $("#nav ul li a, #bzh-nav ul li a, #az-nav ul li a");
 
@@ -321,7 +319,7 @@ $(function() {
       if (direction === "up") active_section = active_section.prev();
 
       var active_link = $('#bzh-nav a[href="#' + active_section.attr("id") +
-													'"], #az-nav a[href="#' + active_section.attr("id") + '"]');
+        '"], #az-nav a[href="#' + active_section.attr("id") + '"]');
       subnavigation_links.removeClass("selected");
       active_link.addClass("selected");
 

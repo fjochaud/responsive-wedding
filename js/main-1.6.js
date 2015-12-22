@@ -83,6 +83,22 @@ function setLang(lang){
 			$("#menu_accomodations_AZ").text($.i18n.prop('sub_accomodations'));
 			$("#menu_places_AZ").text($.i18n.prop('sub_locations'));
 			$("#menu_about_AZ").text($.i18n.prop('sub_about'));
+			$("#header_acc_bzh").html($.i18n.prop('header_acc'));
+			$("#header_hotel_bzh").html($.i18n.prop('header_hotel'));
+			$("#text_hotel_bzh").html($.i18n.prop('text_hotel_bzh'));
+			$("#header_dir_bzh").html($.i18n.prop('header_dir'));
+			$("#text_dir_bzh").html($.i18n.prop('text_dir_bzh'));
+			$("#header_map_bzh").html($.i18n.prop('header_map_bzh'));
+			$("#header_sene").html($.i18n.prop('header_sene'));
+			$("#text_sene").html($.i18n.prop('text_sene'));
+			$("#header_beauregard").html($.i18n.prop('header_beauregard'));
+			$("#text_beauregard").html($.i18n.prop('text_beauregard'));
+
+
+
+			
+
+
 
 		}
 	});

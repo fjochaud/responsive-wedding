@@ -937,7 +937,13 @@ img.theinn  {
     max-height: 500px;
     max-width: 500px;
 }
+img.beauregard  {
 
+    text-align: center;
+    margin-bottom: 50px;
+    max-height: 500px;
+    max-width: 100%;
+}
 div.bp h2 {
     margin: 0;
 }

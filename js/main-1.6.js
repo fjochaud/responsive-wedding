@@ -343,7 +343,5 @@ $(function() {
   });
 
 
-
-
   $('figure.responsive-image').picture();
 });

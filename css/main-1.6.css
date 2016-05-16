@@ -47,10 +47,7 @@ img {
 }
 
 
-.bg-image {
-    width: 100%;
-    height: auto;
-}
+
 
 fieldset {
     border: 0;
@@ -345,8 +342,8 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    height:auto;
     width: 100%;
+    height:auto;
 /*    right: 0;
     bottom: 0;
     /*

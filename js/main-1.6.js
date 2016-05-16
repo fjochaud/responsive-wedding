@@ -176,8 +176,8 @@ $(function() {
 
   var nav_bzh_container = $(".bzh-header-container");
   var bzh_nav = $("#bzh-nav");
-  var sub_top_spacing = nav.outerHeight() + 30;
-  var sub_waypoint_offset = -(nav.outerHeight() + 30);
+  var sub_top_spacing = $("#nav").outerHeight() + 30;
+  var sub_waypoint_offset = -($("#nav").outerHeight() + 30);
 
 
   nav_bzh_container.waypoint({

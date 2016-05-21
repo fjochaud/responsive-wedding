@@ -108,7 +108,8 @@ function setLang(lang) {
       $("#text_place_sedona").html($.i18n.prop('text_place_sedona'));
       $("#header_registry").html($.i18n.prop('header_registry'));
       $("#text_registry").html($.i18n.prop('text_registry'));
-
+      $("#text_hotel_az").html($.i18n.prop('text_hotel_az'));
+      $("#text_dir_az").html($.i18n.prop('text_dir_az'));
 
 
 
